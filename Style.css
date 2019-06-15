@@ -1,6 +1,18 @@
 h1{
-	color: blue;
-	font-size: 100px;
+	color: white;
+	font-size: 30px;
+}
+
+.header{
+	box-sizing: border-box;
+	padding: 10px;
+	position: absolute;
+	height: 150px;
+	width: 100%;
+	color: white;
+	background: linear-gradient(rgba(42, 52, 57, 1) 50%, rgba(42, 52, 57, .9) 75%, rgba(42, 52, 57, .1) 100%);
+	top: 0%;
+	left: 0%;
 }
 
 h2{
@@ -50,19 +62,17 @@ body{
 	width: 700px;
 	height: 700px;
 	border-radius: 50%;
-	top: 20%;
+	top: 25%;
 	left: 20%;
 	opacity: : 0.99;
 }
 
 .Sun:hover .Sun-info{
 	visibility: visible;
-	z-index: 3;
 }
 
 .Mercury:hover .Mercury-info{
 	visibility: visible;
-	z-index: 3;
 }
 
 .Sun:hover {
@@ -116,42 +126,34 @@ body{
 
 .Venus:hover .Venus-info{
 	visibility: visible;
-	z-index: 3;
 }
 
 .Earth:hover .Earth-info{
 	visibility: visible;
-	z-index: 3;
 }
 
 .Mars:hover .Mars-info{
 	visibility: visible;
-	z-index: 3;
 }
 
 .Jupiter:hover .Jupiter-info{
 	visibility: visible;
-	z-index: 3;
 }
 
 .Saturn:hover .Saturn-info{
 	visibility: visible;
-	z-index: 3;
 }
 
 .Uranus:hover .Uranus-info{
 	visibility: visible;
-	z-index: 4;
 }
 
 .Neptun:hover .Neptun-info{
 	visibility: visible;
-	z-index: 4;
 }
 
 .Pluto:hover .Pluto-info{
 	visibility: visible;
-	z-index: 4;
 }
 
 .Sun{
@@ -164,7 +166,7 @@ body{
 	left: 47%;
 	background-position: center;
 	border-radius: 50%;
-	z-index: 3;
+	z-index: 1;
 }
 
 .Mercury-cont:hover{
@@ -172,16 +174,16 @@ body{
 }
 
 .Mercury-cont{
-	width: 200px;
-	height: 200px;
+	width: 160px;
+	height: 160px;
 	border: 1px solid white;
 	border-radius: 50%;
 	position: absolute;
-	top: 39.5%;
-	left: 39.5%; 
+	top: 42.5%;
+	left: 42.5%; 
 	animation: myanim 40s linear infinite; 
 	pointer-events: none;
-	z-index: 3;
+	z-index: 2;
 }
 
 .Mercury{
@@ -189,12 +191,12 @@ body{
 	height: 35px;
 	background: url("Mercury1.gif");
 	position: relative;
-	top: 10px;
+	top: 2px;
 	left: 10px;
 	border-radius: 50%;
 	animation: infoanim 40s linear infinite;
 	pointer-events: auto;
-	z-index: 3;	
+	z-index: 2;	
 
 }
 
@@ -203,13 +205,13 @@ body{
 }
 
 .Venus-cont{
-	width: 260px;
-	height: 260px;
+	width: 230px;
+	height: 230px;
 	border: 1px solid white;
 	border-radius: 50%;
 	position: absolute;
-	top: 34.5%;
-	left: 35.5%; 
+	top: 37.5%;
+	left: 37.5%; 
 	animation: myanim 50s linear infinite;
 	pointer-events: none; 
 	z-index: 3;
@@ -233,16 +235,16 @@ body{
 }
 
 .Earth-cont{
-	width: 330px;
-	height: 330px;
+	width: 300px;
+	height: 300px;
 	border: 1px solid white;
 	border-radius: 50%;
 	position: absolute;
-	top: 29.5%;
-	left: 30.5%; 
+	top: 32%;
+	left: 32%; 
 	animation: myanim 60s linear infinite;
 	pointer-events: none; 
-	z-index: 3;
+	z-index: 4;
 }
 
 .Earth{
@@ -250,12 +252,12 @@ body{
 	height: 42px;
 	background: url("Earth.gif");
 	position: relative;
-	top: 50px;
+	top: 25px;
 	left: 5px;
 	border-radius: 50%;
 	pointer-events: auto;
 	animation: infoanim 60s linear infinite;
-	z-index: 3;
+	z-index: 4;
 }
 
 .Mars-cont:hover{
@@ -263,16 +265,16 @@ body{
 }
 
 .Mars-cont{
-	width: 400px;
-	height: 400px;
+	width: 380px;
+	height: 380px;
 	border: 1px solid white;
 	border-radius: 50%;
 	position: absolute;
-	top: 25%;
+	top: 26%;
 	left: 26%; 
 	animation: myanim 70s linear infinite; 
 	pointer-events: none;
-	z-index: 3;
+	z-index: 5;
 }
 
 .Mars{
@@ -285,7 +287,7 @@ body{
 	border-radius: 50%;
 	pointer-events: auto;
 	animation: infoanim 70s linear infinite;
-	z-index: 3;
+	z-index: 5;
 }
 
 .Jupiter-cont:hover{
@@ -293,16 +295,16 @@ body{
 }
 
 .Jupiter-cont{
-	width: 460px;
-	height: 460px;
+	width: 480px;
+	height: 480px;
 	border: 1px solid white;
 	border-radius: 50%;
 	position: absolute;
-	top: 21%;
-	left: 22%; 
+	top: 20%;
+	left: 20%; 
 	animation: myanim 80s linear infinite;
 	pointer-events: none; 
-	z-index: 3;
+	z-index: 6;
 }
 
 .Jupiter{
@@ -315,7 +317,7 @@ body{
 	border-radius: 50%;
 	pointer-events: auto;
 	animation: infoanim 80s linear infinite;
-	z-index: 3;
+	z-index: 6;
 }
 
 .Saturn-cont:hover{
@@ -323,16 +325,16 @@ body{
 }
 
 .Saturn-cont{
-	width: 530px;
-	height: 530px;
+	width: 590px;
+	height: 590px;
 	border: 1px solid white;
 	border-radius: 50%;
 	position: absolute;
-	top: 16%;
-	left: 18%; 
+	top: 13%;
+	left: 13%; 
 	animation: myanim 90s linear infinite;
 	pointer-events: none; 
-	z-index: 3;
+	z-index: 7;
 }
 
 .Saturn{
@@ -341,12 +343,12 @@ body{
 	background: url("Saturn.gif");
 	background-position: center;
 	position: relative;
-	top: 50px;
+	top: 70px;
 	left: 5px;
 	border-radius: 50%;
 	pointer-events: auto;
 	animation: infoanim 90s linear infinite;
-	z-index: 3;
+	z-index: 7;
 }
 
 .Uranus-cont:hover{
@@ -354,16 +356,16 @@ body{
 }
 
 .Uranus-cont{
-	width: 590px;
-	height: 590px;
+	width: 640px;
+	height: 640px;
 	border: 1px solid white;
 	border-radius: 50%;
 	position: absolute;
-	top: 12%;
-	left: 14%; 
+	top: 10%;
+	left: 10%; 
 	animation: myanim 100s linear infinite;
 	pointer-events: none;
-	z-index: 3;
+	z-index: 8;
 }
 
 .Uranus{
@@ -376,7 +378,7 @@ body{
 	border-radius: 50%;
 	pointer-events: auto;
 	animation: infoanim 100s linear infinite;
-	z-index: 3;
+	z-index: 8;
 }
 
 .Neptun-cont:hover{
@@ -384,16 +386,16 @@ body{
 }
 
 .Neptun-cont{
-	width: 630px;
-	height: 630px;
+	width: 750px;
+	height: 750px;
 	border: 1px solid white;
 	border-radius: 50%;
 	position: absolute;
-	top: 9.5%;
-	left: 11%; 
+	top: 3%;
+	left: 3%; 
 	animation: myanim 120s linear infinite;
 	pointer-events: none; 
-	z-index: 3;
+	z-index: 9;
 }
 
 .Neptun{
@@ -401,12 +403,12 @@ body{
 	height: 45px;
 	background: url("Neptun.gif");
 	position: relative;
-	top: 160px;
-	left: 5px;
+	top: 190px;
+	left: 10px;
 	border-radius: 50%;
 	pointer-events: auto;
 	animation: infoanim 120s linear infinite;
-	z-index: 3;
+	z-index: 9;
 }
 
 .Pluto-cont:hover{
@@ -414,16 +416,16 @@ body{
 }
 
 .Pluto-cont{
-	width: 660px;
-	height: 660px;
+	width: 800px;
+	height: 800px;
 	border: 1px solid white;
 	border-radius: 50%;
 	position: absolute;
-	top: 8%;
-	left: 9%; 
+	top: -1%;
+	left: -1%; 
 	animation: myanim 140s linear infinite;
 	pointer-events: none; 
-	z-index: 3;
+	z-index: 10;
 }
 
 .Pluto{
@@ -432,11 +434,11 @@ body{
 	background: url("Pluto.gif");
 	position: relative;
 	top: 220px;
-	left: 5px;
+	left: 20px;
 	border-radius: 50%;
 	pointer-events: auto;
 	animation: infoanim 140s linear infinite;
-	z-index: 3;
+	z-index: 10;
 }
 
 .Sun-info{
@@ -468,7 +470,7 @@ body{
 	border-bottom-left-radius:5%; 
 	padding: 10px;
 	box-sizing: border-box;
-	z-index: 1;
+	z-index: 2;
 }
 
 .Venus-info{
@@ -484,7 +486,7 @@ body{
 	border-bottom-left-radius:5%;
 	padding: 10px;
 	box-sizing: border-box; 
-	z-index: 1;
+	z-index: 3;
 }
 
 .Earth-info{
@@ -498,7 +500,7 @@ body{
 	border-top-right-radius:5%; 
 	border-bottom-right-radius:5%;
 	border-bottom-left-radius:5%; 
-	z-index: 1;
+	z-index: 4;
 }
 
 .Mars-info{
@@ -514,7 +516,7 @@ body{
 	border-bottom-left-radius:5%; 
 	padding: 10px;
 	box-sizing: border-box;
-	z-index: 1;
+	z-index: 5;
 }
 
 .Jupiter-info{
@@ -530,7 +532,7 @@ body{
 	border-bottom-left-radius:5%; 
 	padding: 10px;
 	box-sizing: border-box;
-	z-index: 1;
+	z-index: 6;
 }
 
 .Saturn-info{
@@ -546,7 +548,7 @@ body{
 	border-bottom-left-radius:5%; 
 	padding: 10px;
 	box-sizing: border-box;
-	z-index: 1;
+	z-index: 7;
 }
 
 .Uranus-info{
@@ -562,7 +564,7 @@ body{
 	border-bottom-left-radius:5%; 
 	padding: 10px;
 	box-sizing: border-box;
-	z-index: 1;
+	z-index: 8;
 }
 
 .Neptun-info{
@@ -578,7 +580,7 @@ body{
 	border-bottom-left-radius:5%; 
 	padding: 10px;
 	box-sizing: border-box;
-	z-index: 1;
+	z-index: 9;
 }
 
 .Pluto-info{
@@ -592,6 +594,6 @@ body{
 	border-top-right-radius:5%; 
 	border-bottom-right-radius:5%;
 	border-bottom-left-radius:5%; 
-	z-index: 1;
+	z-index: 10;
 }
 
